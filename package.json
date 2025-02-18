@@ -5,13 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:api": "deno run --allow-env --allow-net api/main.ts",
+    "dev:vite": "deno run -A npm:vite",
+    "build": "vite build",
     "lint": "eslint .",
+    "serve": "deno task build && deno task dev:api",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "6.29.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
