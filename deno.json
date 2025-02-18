@@ -1,5 +1,4 @@
 {
-  "name": "@ff/fanyong",
   "imports": {
     "@oak/oak": "jsr:@oak/oak@^17.1.4",
     "@tajpouria/cors": "jsr:@tajpouria/cors@^1.2.1"
