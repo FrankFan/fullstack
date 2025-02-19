@@ -38,6 +38,6 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "fanyong"
-          entrypoint: "main.ts"
+          entrypoint: "api/main.ts"
           
           
