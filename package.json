@@ -8,6 +8,7 @@
     "dev:api": "deno run --allow-env --allow-net --allow-read api/main.ts",
     "dev:vite": "deno run -A npm:vite",
     "build": "vite build",
+    "deploy:sit": "deployctl deploy --project=fanyong --entrypoint=api/main.ts",
     "lint": "eslint .",
     "serve": "deno task build && deno task dev:api",
     "preview": "vite preview"

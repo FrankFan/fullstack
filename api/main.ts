@@ -5,6 +5,14 @@ import routeStaticFilesFrom from "./util/routeStaticFilesFrom.ts";
 
 const router = new Router();
 
+router.get("/api", (context) => {
+  context.response.body = {
+    code: 0,
+    msg: "ok",
+    result: {},
+  };
+});
+
 router.get("/api/dinosaurs", (context) => {
   context.response.body = data;
 });

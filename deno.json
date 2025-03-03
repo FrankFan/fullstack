@@ -2,5 +2,13 @@
   "imports": {
     "@oak/oak": "jsr:@oak/oak@^17.1.4",
     "@tajpouria/cors": "jsr:@tajpouria/cors@^1.2.1"
+  },
+  "deploy": {
+    "project": "e69ca8d5-37b4-4b86-ad26-d549b3d99b18",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "api/main.ts"
   }
 }
